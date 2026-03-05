@@ -108,7 +108,9 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      console.error(`Failed to fetch Medium data. Status code: ${res.statusCode}`);
+      console.error(
+        `Failed to fetch Medium data. Status code: ${res.statusCode}`
+      );
       // Optionally: create an empty blogs.json or skip saving
       return;
     }
