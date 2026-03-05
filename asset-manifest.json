@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.b7e2b22a.css",
-    "main.js": "/static/js/main.14d34b6c.js",
+    "main.js": "/static/js/main.4e5f08dc.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/static/js/769.bda0d7b7.chunk.js",
-    "static/media/Siyan(Evsn)_Wen_resume.pdf": "/static/media/Siyan(Evsn)_Wen_resume.5354c22eb342fce10e41.pdf",
+    "static/media/Siyan_Wen_resume.pdf": "/static/media/Siyan_Wen_resume.5354c22eb342fce10e41.pdf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/liqianLogo.png": "/static/media/liqianLogo.11b1de4e4f370d64baad.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -18,7 +18,7 @@
     "index.html": "/index.html",
     "static/media/shopNet.webp": "/static/media/shopNet.2249a384585541c2bb23.webp",
     "main.b7e2b22a.css.map": "/static/css/main.b7e2b22a.css.map",
-    "main.14d34b6c.js.map": "/static/js/main.14d34b6c.js.map",
+    "main.4e5f08dc.js.map": "/static/js/main.4e5f08dc.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.b7e2b22a.css",
-    "static/js/main.14d34b6c.js"
+    "static/js/main.4e5f08dc.js"
   ]
 }
