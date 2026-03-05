@@ -6,8 +6,6 @@ require("dotenv").config();
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
-const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
-
 const ERR = {
   noUserName:
     "Github Username was found to be undefined. Please set all relevant environment variables.",
@@ -94,41 +92,3 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
-if (MEDIUM_USERNAME !== undefined) {
-  console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
-  const options = {
-    hostname: "api.rss2json.com",
-    path: `/v1/api.json?rss_url=https://medium.com/feed/@${MEDIUM_USERNAME}`,
-    port: 443,
-    method: "GET"
-  };
-
-  const req = https.request(options, res => {
-    let mediumData = "";
-
-    console.log(`statusCode: ${res.statusCode}`);
-    if (res.statusCode !== 200) {
-      console.error(
-        `Failed to fetch Medium data. Status code: ${res.statusCode}`
-      );
-      // Optionally: create an empty blogs.json or skip saving
-      return;
-    }
-
-    res.on("data", d => {
-      mediumData += d;
-    });
-    res.on("end", () => {
-      fs.writeFile("./public/blogs.json", mediumData, function (err) {
-        if (err) return console.log(err);
-        console.log("saved file to public/blogs.json");
-      });
-    });
-  });
-
-  req.on("error", error => {
-    throw error;
-  });
-
-  req.end();
-}
