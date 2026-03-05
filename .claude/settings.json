@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls d:/sample_portfolio/developerFolio/src/containers/Main*)",
+      "Bash(ls d:/sample_portfolio/developerFolio/public/*.html)"
+    ]
+  }
+}
